@@ -1,0 +1,39 @@
+<%- include ("./partials/header") %>
+
+<div class="w-full h-screen bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] flex items-center justify-center">
+  <div class="w-72 h-96 bg-zinc-100 px-4 py-10 rounded-[30px]">
+    <div style="display: flex; justify-content: center">
+      <img
+        src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png"
+        alt="pin logo"
+        width="50"
+        height="60"
+      />
+    </div>
+    <p class="header py-3 capitalize font-semibold text-zinc-70" style="display: flex; justify-content: center">Login to see more</p>
+    <form action="/login" method="post">
+      <input
+        class="border-2 rounded-md block mt-2 w-full px-3 py-2"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
+      <input
+        class="border-2 rounded-md block mt-2 w-full px-3 py-2"
+        type="password"
+        name="password"
+        placeholder="password"
+      />
+      <a href="#" class="mt-2 font-semibold inline-block text-zinc-500">Forgot Password</a>
+      <input
+        class="border-2 block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full"
+        type="submit"
+        value="login"
+      />
+    </form>
+
+    <a href="/register" class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center" style="display: flex; justify-content: center">Register Now</a>
+  </div>
+</div>
+
+<%- include ("./partials/footer") %>
